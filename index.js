@@ -26,7 +26,7 @@ function fetchMovies(url) {
                 title.setAttribute('id', 'title');
                 const center = document.createElement('center');
 
-                title.innerHTML = `${element.title}`;
+                title.innerHTML = `${element.title}<br><a href="movie.html?id=${element.id}&title=${element.title}">Reviews</a>`;
                 image.src = IMG_PATH + element.poster_path;
 
                 center.appendChild(image);
