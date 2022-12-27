@@ -71,7 +71,7 @@ export default class ReviewsDAO {
             });
             return cursor.toArray();
         } catch (e) {
-            console.error(`Unble to get review: ${e}`);
+            console.error(`Unable to get review: ${e}`);
             return {error: e};
         }
     }

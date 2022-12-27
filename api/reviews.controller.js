@@ -31,6 +31,7 @@ export default class ReviewsController {
             res.status(500).json({error: e.message});
         }
     }
+
     static async apiUpdateReview(req, res, next) {
         try {
             const reviewId = req.params.id;
@@ -51,7 +52,8 @@ export default class ReviewsController {
             res.status(500).json({error: e.message});
         }
     }
-    static async apiDelete(req, res, next) {
+
+    static async apiDeleteReview(req, res, next) {
         try {
             const reviewId = req.params.id;
             const reviewResponse = await ReviewDAO.deleteReview(reviewId);
@@ -60,6 +62,7 @@ export default class ReviewsController {
             res.status(500).json({error: e.message});
         }
     }
+
     static async apiGetReviews(req, res, next) {
         try {
             let id = req.params.id || {};
