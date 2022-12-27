@@ -77,9 +77,10 @@ form {
 
 .card:hover {
     cursor: pointer;
-    box-shadow: 2px 4px 4px #151f30, -2px 4px 4px #151f30;
+    box-shadow: 2px 4px 8px #151f30, -2px -4px 8px #151f30;
 }
 
 .card h3 {
     color: white;
+    text-overflow: ellipsis;
 }
